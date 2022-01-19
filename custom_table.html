@@ -234,7 +234,8 @@
                         checkbox.checked = true;
                     return;
                 }
-                var td = createElementWithText('td', field);
+                var td = document.createElement("td");
+                td.innerHTML = field  
                 if (!isNaN(field)) {
                     td.className = 'numeric'; // Set numeric class to align numeric cells
                 }
